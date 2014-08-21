@@ -1,0 +1,10 @@
+---
+applications:
+- name: gd
+  memory: 128M 
+  instances: 1
+  host: gd
+  path: .
+  buildpack: https://github.com/dmikusa-pivotal/cf-php-build-pack.git
+  services:
+  - dev-mysql
